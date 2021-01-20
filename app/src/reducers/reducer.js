@@ -1,30 +1,29 @@
+import { FETCH_DOG_SUCCESS, FETCH_DOG_START, FETCH_DOG_FAIL } from '../actions/getDog'
+
 
 const initialState = {
   dogImg: '',
   isFetching: false,
-  dogBreed: '',
   error: ''
 }
 
 export const reducer = (state = initialState, action) => {
   switch (action.type){
-    case ('FETCH_BREED_START'):
+    case ('FETCH_DOG_START'):
       return({
         ...state,
         isFetching: true,
         error: '',
-        dogBreed:'',
         dogImg:''
       })
-    case ('FETCHH_BREED_SUCCESS'):
+    case ('FETCH_DOG_SUCCESS'):
       return({
         ...state,
         isFetching: false,
-        dogBreed: action.payload,
         dogImg: action.payload,
         error: ''
       })
-     case ('FETCH_QUOTE_FAIL'):
+     case ('FETCH_DOG_FAIL'):
        return({
          ...state,
          isFetching: false,

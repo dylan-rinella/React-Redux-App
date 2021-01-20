@@ -1,9 +1,12 @@
+import React from 'react';
+import Dogs from './components/Dogs'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>HELLO</h1>
+      <h1>Random Dog Generator!</h1>
+      <Dogs />
     </div>
   );
 }
