@@ -11,7 +11,7 @@ img{
   height: 400px;
   object-fit: scale;
   flex-shrink: 2;
-  float: right;
+  
 }
 button{
   margin-left: 45.5%;
